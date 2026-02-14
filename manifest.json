@@ -4,7 +4,7 @@
     "title": "ChatGPT Conversation Downloader",
     "description": "Download shared ChatGPT conversations as readable text files.",
     "version": "1.0.0",
-    "icon": "",
+    "icon": "icon.png",
     "homepage": "https://github.com/chanelshivesh-pixel/gopeed-extension-chatgpt",
     "repository": {
         "url": "https://github.com/chanelshivesh-pixel/gopeed-extension-chatgpt"
