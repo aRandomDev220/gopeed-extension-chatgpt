@@ -1,0 +1,29 @@
+{
+  "name": "gopeed-chatgpt-pdf",
+  "version": "1.0.0",
+  "description": "Gopeed extension to download ChatGPT shared conversations as PDF",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --mode development --watch"
+  },
+  "keywords": [
+    "gopeed",
+    "extension",
+    "chatgpt",
+    "pdf"
+  ],
+  "author": "Gopeed User",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "copy-webpack-plugin": "^11.0.0",
+    "buffer": "^6.0.3",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.1"
+  }
+}

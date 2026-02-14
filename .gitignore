@@ -1,0 +1,16 @@
+node_modules/
+
+# Debug/temp files
+*.log
+*.html
+api*.json
+noua.json
+proxy_test*.json
+proxy_test*.txt
+paste_test.txt
+paste_download.txt
+ix_test.txt
+jina_test.txt
+debug_out.txt
+build_out.txt
+build_debug.js
