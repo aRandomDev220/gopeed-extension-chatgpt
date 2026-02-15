@@ -2,8 +2,8 @@
     "name": "gopeed-extension-chatgpt",
     "author": "chanelshivesh-pixel",
     "title": "ChatGPT Conversation Downloader",
-    "description": "Download shared ChatGPT conversations as readable text files.",
-    "version": "1.0.0",
+    "description": "Download shared ChatGPT conversations as readable text files or screenshots.",
+    "version": "1.1.0",
     "icon": "icon.png",
     "homepage": "https://github.com/chanelshivesh-pixel/gopeed-extension-chatgpt",
     "repository": {
@@ -20,5 +20,23 @@
             "entry": "dist/index.js"
         }
     ],
-    "settings": []
+    "settings": [
+        {
+            "name": "format",
+            "title": "Download Format",
+            "description": "Choose the output format for the conversation",
+            "type": "string",
+            "value": "text",
+            "options": [
+                {
+                    "label": "Text File (.txt)",
+                    "value": "text"
+                },
+                {
+                    "label": "Screenshot (.png)",
+                    "value": "screenshot"
+                }
+            ]
+        }
+    ]
 }

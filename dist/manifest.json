@@ -1,24 +1,42 @@
 {
-    "name": "gopeed-extension-chatgpt",
-    "author": "chanelshivesh-pixel",
-    "title": "ChatGPT Conversation Downloader",
-    "description": "Download shared ChatGPT conversations as readable text files.",
-    "version": "1.0.0",
-    "icon": "",
-    "homepage": "https://github.com/chanelshivesh-pixel/gopeed-extension-chatgpt",
-    "repository": {
-        "url": "https://github.com/chanelshivesh-pixel/gopeed-extension-chatgpt"
-    },
-    "scripts": [
+  "name": "gopeed-extension-chatgpt",
+  "author": "chanelshivesh-pixel",
+  "title": "ChatGPT Conversation Downloader",
+  "description": "Download shared ChatGPT conversations as readable text files or screenshots.",
+  "version": "1.1.0",
+  "icon": "icon.png",
+  "homepage": "https://github.com/chanelshivesh-pixel/gopeed-extension-chatgpt",
+  "repository": {
+    "url": "https://github.com/chanelshivesh-pixel/gopeed-extension-chatgpt"
+  },
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": [
+          "*://chatgpt.com/share/*"
+        ]
+      },
+      "entry": "index.js"
+    }
+  ],
+  "settings": [
+    {
+      "name": "format",
+      "title": "Download Format",
+      "description": "Choose the output format for the conversation",
+      "type": "string",
+      "value": "text",
+      "options": [
         {
-            "event": "onResolve",
-            "match": {
-                "urls": [
-                    "*://chatgpt.com/share/*"
-                ]
-            },
-            "entry": "dist/index.js"
+          "label": "Text File (.txt)",
+          "value": "text"
+        },
+        {
+          "label": "Screenshot (.png)",
+          "value": "screenshot"
         }
-    ],
-    "settings": []
+      ]
+    }
+  ]
 }

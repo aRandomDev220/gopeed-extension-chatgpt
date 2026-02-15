@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light dark">
+    <title>415 Unsupported Media Type</title>
+</head>
+<body align="center">
+    <div role="main" align="center">
+        <h1>415: Unsupported Media Type</h1>
+        <p>The request entity has a media type which the server or resource does not support.</p>
+        <hr />
+    </div>
+    <div role="contentinfo" align="center">
+        <small>Rocket</small>
+    </div>
+</body>
+</html>
