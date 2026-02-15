@@ -33,6 +33,10 @@
           "value": "text"
         },
         {
+          "label": "PDF Document (.pdf)",
+          "value": "pdf"
+        },
+        {
           "label": "Screenshot (.png)",
           "value": "screenshot"
         }
